@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+To see the error, run `npm install` first and then run `npm run export`.
 
-## Getting Started
+Here's the error text:
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
 ```
+Import trace for requested module:
+./styles/cursor.css
+./pages/_app.js
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+./styles/cursor.css
+URIError: URI malformed
+    at /Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/styles/cursor.css:2:3
+    at decodeURIComponent (<anonymous>)
+    at Object.normalizeUrl (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/css-loader/src/utils.js:43:12)
+    at /Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/css-loader/src/plugins/postcss-url-parser.js:101:31
+    at walk (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/postcss-value-parser/index.js:1:5010)
+    at ValueParser.walk (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/postcss-value-parser/index.js:1:326)
+    at parseDeclaration (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/css-loader/src/plugins/postcss-url-parser.js:85:12)
+    at Declaration (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/css-loader/src/plugins/postcss-url-parser.js:206:39)
+    at LazyResult.visitTick (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/postcss/lib/lazy-result.js:456:16)
+    at LazyResult.runAsync (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/postcss/lib/lazy-result.js:372:30)
+    at LazyResult.async (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/postcss/lib/lazy-result.js:205:30)
+    at tryRunOrWebpackError (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:45579:9)
+    at __webpack_require_module__ (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:31387:12)
+    at __nested_webpack_require_150254__ (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:31344:18)
+    at /Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:31415:20
+    at symbolIterator (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/neo-async/async.js:1:14452)
+    at done (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/neo-async/async.js:1:14832)
+    at Hook.eval [as callAsync] (eval at create (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:141008:10), <anonymous>:15:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:140810:14)
+    at /Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:31322:43
+    at symbolIterator (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/neo-async/async.js:1:14410)
+-- inner error --
+URIError: URI malformed
+    at /Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/styles/cursor.css:2:3
+    at decodeURIComponent (<anonymous>)
+    at Object.normalizeUrl (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/css-loader/src/utils.js:43:12)
+    at /Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/css-loader/src/plugins/postcss-url-parser.js:101:31
+    at walk (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/postcss-value-parser/index.js:1:5010)
+    at ValueParser.walk (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/postcss-value-parser/index.js:1:326)
+    at parseDeclaration (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/css-loader/src/plugins/postcss-url-parser.js:85:12)
+    at Declaration (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/css-loader/src/plugins/postcss-url-parser.js:206:39)
+    at LazyResult.visitTick (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/postcss/lib/lazy-result.js:456:16)
+    at LazyResult.runAsync (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/postcss/lib/lazy-result.js:372:30)
+    at LazyResult.async (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/postcss/lib/lazy-result.js:205:30)
+    at Object.<anonymous> (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[1]!/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[2]!/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/styles/cursor.css:1:7)
+    at /Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:89923:11
+    at Hook.eval [as call] (eval at create (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:140994:10), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:140806:14)
+    at /Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:31389:39
+    at tryRunOrWebpackError (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:45574:7)
+    at __webpack_require_module__ (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:31387:12)
+    at __nested_webpack_require_150254__ (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:31344:18)
+    at /Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/webpack/bundle5.js:31415:20
+    at symbolIterator (/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/compiled/neo-async/async.js:1:14452)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Generated code for /Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[1]!/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[2]!/Users/cb-sriram.thiagarajan/code/playground/next-css-loader-error-repro/styles/cursor.css
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Import trace for requested module:
+./pages/_app.js
+```
